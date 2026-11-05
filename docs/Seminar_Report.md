@@ -1,34 +1,31 @@
-# FPGA-Based Vision Processing for Autonomous Robots
+# Seminar study map
 
-## Abstract
+This repository documents Muhammed Salman C. C.'s course seminar, **FPGA-Based Vision Processing for Autonomous Robots**.
 
-Field-Programmable Gate Arrays (FPGAs) are widely used in embedded vision systems because they support parallel processing, low latency, and energy-efficient computation. In autonomous robots, vision processing must be be fast enough to support real-time decisions such as obstacle detection, navigation, and object recognition.
+The [main README](../README.md) is the full structured write-up. It is grounded in the 40-slide verified seminar deck supplied by the author. The deck states that this is a review, not an implementation.
 
-## Introduction
+## Topic provenance
 
-Autonomous robots rely on computer vision to perceive their surroundings. Traditional processors often struggle to satisfy the real-time requirements of vision algorithms. FPGA technology provides hardware acceleration by executing multiple operations in parallel.
+| Slides | Topic |
+| --- | --- |
+| 1-5 | Seminar identity, problem, objectives, scope |
+| 6-13 | Robotic workloads, FPGA resources, CNN/YOLO, quantisation and metric equations |
+| 14-17 | Motivation, evolution, survey examples |
+| 18-21 | Li kernel partition, memory architecture, resources, results, timing caveat |
+| 22-24 | Al Amin dataset, deployment, results |
+| 25-30 | Comparative method, evidence limits, calculated efficiencies |
+| 31-35 | Proposed robot, timing, energy, thermal behaviour, challenges, guidelines |
+| 36-38 | Future directions and conclusions |
+| 39-40 | Bibliography and discussion themes |
 
-## Objectives
+## Evidence categories
 
-- Study FPGA architecture
-- Understand embedded vision systems
-- Explore hardware acceleration
-- Analyze applications in autonomous robotics
+- **Reported:** quantities quoted from the cited studies, not measurements made by the seminar author.
+- **Derived:** arithmetic using those reported inputs, with their boundaries retained.
+- **Proposed:** robot architecture and integration guidance synthesised from the literature, not a built prototype.
 
-## Applications
+## Source consistency note
 
-- Obstacle detection
-- Object tracking
-- Stereo vision
-- Autonomous navigation
-- Industrial robots
+Slide 20 labels first-layer PE efficiency as 60.2%, while slide 19/20 gives 363 active PEs out of 600 convolution PEs. Direct division is 60.5%. The README preserves the counts and states the mismatch instead of silently repeating the percentage.
 
-## Conclusion
-
-FPGA-based vision processing offers low latency, high throughput, and energy efficiency, making it an excellent platform for autonomous robotic systems.
-
-## References
-
-1. IEEE Xplore – FPGA Vision Systems
-2. IEEE Xplore – FPGA Feature Extraction
-3. IEEE Xplore – Stereo Vision on FPGA
+The older report recovered from prior correspondence is not included here as the final submitted report. The newly supplied deck contains a fuller analysis and is the primary source for this write-up.
